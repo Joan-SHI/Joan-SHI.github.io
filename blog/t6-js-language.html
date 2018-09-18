@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+      <style>
+        body {
+          font-family: 'Jua', sans-serif;
+          font-size: 48px;
+          text-shadow: 4px 4px 4px #aaa;
+          background-color: lightgray;
+      }
+      </style>
+        <link rel="stylesheet" href="/Users/linh1/Downloads/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+        <title>t6-js-language</title>
+      <meta charset="UTF-8">  
+    </head>
+    <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+            <img src="../images/tea-world.JPG" alt="tea world" style="width: 200px; height:200px;">
+        </div>
+        <div class="col-md-9">
+            <h1>t6-js-language</h1>
+  <body>
+     <h3>parentheses<mark>()</mark></h3> 
+       <h5>Examples</h5>
+         <pre><code>int a;
+    a = (4 + 3) * 2;       // Grouping expressions
+    if (a > 10) {          // Containing expressions
+    line(a, 0, a, 100);  // Containing a list of parameters
+    }</code></pre>
+      <h5>Description</h5>
+        <p><b>Grouping and containing expressions and parameters. Parentheses have multiple functions relating to functions and structures. They are used to contain a list of parameters passed to functions and control structures and they are used to group expressions to control the order of execution. Some functions have no parameters and in this case, the space between parentheses is blank.</b></p>
+     <h3>brackets<mark>[]</mark></h3> 
+       <h5>Examples</h5>
+         <pre><code>int[] numbers = new int[3]; 
+
+        numbers[0] = 90; 
+        
+        numbers[1] = 150; 
+        
+        numbers[2] = 30; 
+        
+        int a = numbers[0] + numbers[1]; // Sets variable a to 240 
+        
+        int b = numbers[1] + numbers[2]; // Sets variable b to 180</code></pre>
+       <h5>Description</h5>
+       <p><b>The array access operator is used to specify a location within an array. The data at this location can be defined with the syntax <mark>array[element] = value</mark> or read with the syntax <mark>value = array[element]</mark>.</b></p>
+     <h3>braces<mark>{}</mark></h3>
+       <h5>Examples</h5>
+       <pre><code>int[] a = { 5, 20, 25, 45, 70 };
+        void setup() {
+        size(100, 100);
+        }
+        void draw() {
+        for(int i=0; i < a.length; i++) {
+        line(0, a[i], 50, a[i]);
+        }
+        }</code></pre>
+       <h5>Description</h5>
+      <p><b>Define the beginning and end of functions blocks and statement blocks such as the <mark>for()</mark> and <mark>if()</mark> structures. Curly braces are also used for defining inital values in array declarations.</b></p>
+     <h3>single quotes<mark>''</mark> and double quotes<mark>""</mark></h3>
+       <h5>They are the same thing</h5>
+         <p><b>In JavaScript, a string is a sequence characters enclosed in single or double quotes. </b></p>
+           <pre><code>'abc' === "abc"</code></pre>
+       <h5>Single quotes are more common</h5>
+       <h5>Stick to one and keep it consistent</h5>
+
+    <!-- this is a comment. -->
+  
+  </body>
+  
+</html>

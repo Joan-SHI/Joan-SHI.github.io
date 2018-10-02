@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+      <style>
+        body {
+          font-family: 'Jua', sans-serif;
+          font-size: 48px;
+          text-shadow: 4px 4px 4px #aaa;
+          background-color: lightgray;
+      }
+      </style>
+        <link rel="stylesheet" href="/Users/linh1/Downloads/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+        <title>t6-scope</title>
+      <meta charset="UTF-8">  
+    </head>
+    <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+            <img src="../images/tea-world.JPG" alt="tea world" style="width: 200px; height:200px;">
+        </div>
+        <div class="col-md-9">
+            <h1>t6-scope</h1>
+  <body>
+<h3>Definition</h3>
+      <p>JavaScript has two scopes – global<mark>(Public)</mark> and local<mark>(Private)</mark>. Any variable declared outside of a function belongs to the global scope, and is therefore accessible from anywhere in your code. Each function has its own scope, and any variable declared within that function is only accessible from that function and any nested functions.</p>
+    <h3>Global example</h3> 
+      <pre><code>const hello = 'Hello CSS-Tricks Reader!'
+
+            function sayHello () {
+              console.log(hello)
+            }
+            
+            console.log(hello) // 'Hello CSS-Tricks Reader!'
+            sayHello() // 'Hello CSS-Tricks Reader!'
+      </code></pre>
+  <h3>Local example</h3> 
+      <pre><code>function sayHello () {
+                        const hello = 'Hello CSS-Tricks Reader!'
+                        console.log(hello)
+                      }
+                      
+                      sayHello() // 'Hello CSS-Tricks Reader!'
+                      console.log(hello) // Error, hello is not defined
+      </code></pre>
+
+      <h3>Comments</h3> 
+      <p>Imagine each function is someone's home. When you declared any variable outside of a function(global),it acted like you posted your info public.
+            If you declared any variable within that function, it means you keep that info private, only accessible from the family members at home.And nested functions are like teenagers' rooms that their parents have no access to them but 
+            the teenagers do have access to their parents' house <mark>(lexical scoping)</mark>.Sounds unfair, right? Hope you had ever used that privilege:)
+        </p>
+
+<!-- this is a comment. -->
+  
+  </body>
+  
+</html>
